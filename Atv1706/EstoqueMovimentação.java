@@ -14,16 +14,31 @@ public class EstoqueMovimentação {
     public static void servico5(Scanner teclado) {
          
          System.out.println("Olá, Bem-vindo");
-         System.out.println("Se cadastre no nosso sistema de assinatura!");
+         System.out.println("Se cadastre no nosso sistema de Estoque!");
          
-         Scanner tec = new Scanner(System.in);
-         System.out.println("Diga seu nome");
-         String nome = tec.nextLine();
-         System.out.println("Plano Free:");
-         System.out.println("Plano Premium:");
-         System.out.println("Plano Premium:");
-         System.out.println("Diga o plano que voce deseja");
-         String plano = tec.nextLine();
+        System.out.println("Digite a descrição do produto:");
+        String descricao = scanner.nextLine();
+
+        System.out.println("Digite o preço de venda:");
+        double precoVenda = scanner.nextDouble();
+
+        System.out.println("Digite o preço de custo:");
+        double precoCusto = scanner.nextDouble();
+
+        System.out.println("Digite o ID da categoria:");
+        int idCategoria = scanner.nextInt();
+
+        System.out.println("Digite a quantidade em estoque:");
+        int quantidadeEstoque = scanner.nextInt();
+
+        // Exibindo as informações do produto
+        System.out.println("\nProduto cadastrado:");
+        System.out.println("Descrição: " + descricao);
+        System.out.println("Preço de venda: R$ " + precoVenda);
+        System.out.println("Preço de custo: R$ " + precoCusto);
+        System.out.println("ID da categoria: " + idCategoria);
+        System.out.println("Quantidade em estoque: " + quantidadeEstoque);
+
          
 }
 }
