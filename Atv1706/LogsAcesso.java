@@ -14,16 +14,15 @@ public class LogsAcesso {
        public static void servico7(Scanner teclado) {
          
          System.out.println("Olá, Bem-vindo");
-         System.out.println("Se cadastre no nosso sistema de assinatura!");
          
-         Scanner tec = new Scanner(System.in);
-         System.out.println("Diga seu nome");
-         String nome = tec.nextLine();
-         System.out.println("Plano Free:");
-         System.out.println("Plano Premium:");
-         System.out.println("Plano Premium:");
-         System.out.println("Diga o plano que voce deseja");
-         String plano = tec.nextLine();
+       System.out.println("\n---- Logs de Acesso ----");
+       System.out.print("Usuário: ");
+       String user = sc.nextLine();
+       System.out.print("Ação realizada: ");
+       String acao = sc.nextLine();
+       System.out.print("Data e hora (dd/MM/yyyy hh:mm): ");
+       String dataHora = sc.nextLine();
+       System.out.printf("Log: usuário=%s | ação=%s | dataHora=%s%n", user, acao, dataHora);
          
 }
 }
