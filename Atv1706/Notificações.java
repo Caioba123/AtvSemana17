@@ -16,14 +16,15 @@ public class Notificações {
          System.out.println("Olá, Bem-vindo");
          System.out.println("Se cadastre no nosso sistema de assinatura!");
          
-         Scanner tec = new Scanner(System.in);
-         System.out.println("Diga seu nome");
-         String nome = tec.nextLine();
-         System.out.println("Plano Free:");
-         System.out.println("Plano Premium:");
-         System.out.println("Plano Premium:");
-         System.out.println("Diga o plano que voce deseja");
-         String plano = tec.nextLine();
+         System.out.println("\n=== REGISTRO DE NOTIFICAÇAO ===");
+        System.out.print("Ação realizada pelo usuário: ");
+        String acao = scanner.nextLine();
+
+        System.out.print("Data e hora da ação: ");
+        String dataHora = scanner.nextLine();
+
+        System.out.print("IP de origem: ");
+        String ipOrigem = scanner.nextLine();
          
 }
 }
