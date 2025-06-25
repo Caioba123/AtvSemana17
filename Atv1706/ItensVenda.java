@@ -16,14 +16,28 @@ public class ItensVenda {
          System.out.println("Olá, Bem-vindo");
          System.out.println("Se cadastre no nosso sistema de assinatura!");
          
-         Scanner tec = new Scanner(System.in);
-         System.out.println("Diga seu nome");
-         String nome = tec.nextLine();
-         System.out.println("Plano Free:");
-         System.out.println("Plano Premium:");
-         System.out.println("Plano Premium:");
-         System.out.println("Diga o plano que voce deseja");
-         String plano = tec.nextLine();
+        System.out.println("Digite o ID da venda:");
+        int idVenda = scanner.nextInt();
+
+        System.out.println("Digite o ID do produto:");
+        int idProduto = scanner.nextInt();
+
+        System.out.println("Digite a quantidade:");
+        int quantidade = scanner.nextInt();
+
+        System.out.println("Digite o preço unitário:");
+        double precoUnitario = scanner.nextDouble();
+
+        System.out.println("Digite o subtotal:");
+        double subtotal = scanner.nextDouble();
+
+        System.out.println("\nDados do item da venda:");
+        System.out.println("ID da venda: " + idVenda);
+        System.out.println("ID do produto: " + idProduto);
+        System.out.println("Quantidade: " + quantidade);
+        System.out.println("Preço unitário: R$ " + precoUnitario);
+        System.out.println("Subtotal: R$ " + subtotal);
+
          
 }
 }
