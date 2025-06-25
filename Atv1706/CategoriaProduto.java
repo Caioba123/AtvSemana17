@@ -15,14 +15,23 @@ public class CategoriaProduto {
          System.out.println("Olá, Bem-vindo");
          System.out.println("Se cadastre no nosso sistema de assinatura!");
          
-         Scanner tec = new Scanner(System.in);
-         System.out.println("Diga seu nome");
-         String nome = tec.nextLine();
-         System.out.println("Plano Free:");
-         System.out.println("Plano Premium:");
-         System.out.println("Plano Premium:");
-         System.out.println("Diga o plano que voce deseja");
-         String plano = tec.nextLine();
+       
+        System.out.println("Diga nome do produto");
+        String nome = scanner.nextLine();
+
+        System.out.println("Diga o id do produto");
+        int id = scanner.nextInt();
+        scanner.nextLine(); 
+
+        System.out.println("Diga se ele é inflamável ou não");
+        String info1 = scanner.nextLine();
+
+        System.out.println("Diga se ele é quebrável");
+        String info2 = scanner.nextLine();
+
+        System.out.println("Diga se ele é eletrônico");
+        String info = scanner.nextLine();
+
          
 }
 }
